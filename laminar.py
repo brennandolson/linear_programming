@@ -29,6 +29,7 @@ def test_group(arr, g):
 def test_groups(arr, g1, g2):
     return test_group(arr, g1) and test_group(arr, g2)
 
+# hard-coded for 4 during testing. Never got around to generalizing
 def good_groups(arr):
     for g1, g2 in [[0], [1,2,3]], [[1], [0,2,3]], [[2], [0,1,3]], [[3],
             [0,1,2]], [[0,1], [2,3]], [[0,2], [1,3]], [[0,3], [1,2]]:
